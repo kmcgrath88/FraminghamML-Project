@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, , maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cancer In America</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Our CSS-->
+  <link rel="stylesheet" type="text/css" href="../static/js/style.css">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <!-- Jumbotron for title, quote, and pic -->
+      <div class="col-md-12 jumbotron text-center">
+        <h1><Strong>Cancer in America</Strong></h1>
+        <h2 style="font-size:18px"><Strong>Incidence and Mortality</Strong></h2>
+        <p style="font-size:10px"> (Data from 2016)</p>
+        <p class="quote" style="font-size:16px"> "Each year in the United States, more than 1.6 million people are
+          diagnosed with cancer, and nearly 600,000 die from it,
+          making it the second leading cause of death. The cost of cancer care continues to rise and is expected to
+          reach almost $174 billion by 2020."
+          <br> - <i style="font-size:14px">Centers for Disease Control and Prevention </i></p>
+      </div>
+    </div>
+  </div>
+
+  <div class='tableauPlaceholder' id='viz1604800162693' style='position: relative'><noscript><a href='#'><img alt=' '
+          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4D&#47;4D7G3QXXC&#47;1_rss.png'
+          style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='path' value='shared&#47;4D7G3QXXC' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image'
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4D&#47;4D7G3QXXC&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en' /></object></div>
+  <script
+    type='text/javascript'>                    var divElement = document.getElementById('viz1604800162693'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '1016px'; vizElement.style.height = '1014px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+  <!-- Button to scrape most recent cancer article title, text, date, and link -->
+  <!-- <div class='row' style="margin-left: 3.9%;">
+    <div class='col-md-12'>
+      <p style="font-size:16px"><a class="btn btn-primary btn-lg" href="/scrape" role="button">Click Here For Recent
+          Cancer News:</a></p>
+      <p style="font-size:16px"><strong><a href={{cancer_data.news_url}} style="color: black"
+            target="_blank">{{cancer_data.article_title}}</a></strong> -
+        {{cancer_data.date}} <br>
+        {{cancer_data.article_text}}</p>
+    </div>
+  </div> -->
+
+
+  <!-- The div where we will inject our map -->
+  <!-- <div id="map" style="margin: auto; width: 90%; height: 425px;"></div>
+
+  <br>
+
+  <div class="container-fluid">
+    <div class="row">
+      Bar graph-->
+  <!-- <div class="col-md-5" style="width: 50%; height: 60%;display: inline-block;">
+        <canvas id="bar"></canvas>
+      </div> -->
+
+  <!-- Doughnut graph-->
+  <!-- <div class="col-md-5 offset-md-1" style="width: 50%; height: 60%;display: inline-block;">
+        <canvas id="doughnut"></canvas>
+      </div>
+    </div> -->
+
+  <!-- <div class="row"> -->
+  <!-- Radar graph -->
+  <!-- <div class="col-md-5" style="width: 50%; height: 60%;display: inline-block;">
+        <canvas id="radar"></canvas>
+      </div> -->
+
+  <!-- Polar-area graph -->
+  <!-- <div class="col-md-5 offset-md-1" style="width: 50%; height: 60%;display: inline-block;">
+        <canvas id="polar"></canvas>
+      </div>
+    </div> -->
+
+  <!--Bubble graph-->
+  <!-- <div class="row" style=" margin: auto; width: 90%; height: 60%; align-content: center">
+      <div id="bubble"></div>
+    </div>
+  </div> -->
+
+  <!-- API key
+  <script type="text/javascript" src="../static/js/config.js"></script>
+
+  Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script> -->
+
+  <!-- D3 CDN -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+  <!-- JS -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script> -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script type="text/javascript" src="../static/js/Chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
+  <script type="text/javascript" src="../static/js/chartjs-plugin-style.js"></script>
+  <script type="text/javascript" src="../static/js/chartjs-plugin-colorschemes.js"></script>
+  <script type="text/javascript" src="../static/js/logic.js"></script>
+
+</body>
+
+</html>
