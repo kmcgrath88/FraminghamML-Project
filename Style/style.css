@@ -1,3 +1,18 @@
+/* Navbar color */
+.bg-light{
+  background-color:rgb(11, 12, 16) !important;
+  
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+
+/* .dropdown-menu{
+  background-color: rgb(8, 8, 8) !important;
+  color:white !important;
+} */
+
 /* Image for jumbotron */
 .jumbotron {
   background-image: url("heart.jpg") !important; 
@@ -16,8 +31,17 @@
   box-sizing:border-box;
 }
 
-/* 1st and 2nd tableau */
-.tableauPlaceholder{
+/* 1st tableau */
+.tableauPlaceholder1{
+  float:left !important;
+  width: 45% !important;
+  margin-left: 4% !important;
+  padding: 3px;
+}
+
+/*2nd tableau */
+.tableauPlaceholder2{
+  /* float:left !important; */
   float:left !important;
   width: 45% !important;
   margin-left: 4% !important;
@@ -26,9 +50,9 @@
 
 
 /* Tableau Table */
-.tableauPlaceholder2 {
+.tableauPlaceholder3 {
   float:left !important;
-  width: 175% !important;
+  width: 165% !important;
   margin-left: 4% !important;
   margin-bottom: 4% !important;
   padding: 3px;
@@ -49,10 +73,10 @@ html {
 }
 
 /* Set map to 80% of the screen size */
-#map{
+/* #map{
   height: 80%;
   width: 80%;
-}
+} */
 
 /* Aligning text */
 h1 {
@@ -68,7 +92,7 @@ h2{
 }
 
 /* Legends */
-.legend {
+/* .legend {
   line-height: 18px;
   color: #555;
   background-color: whitesmoke;
@@ -80,25 +104,25 @@ h2{
   margin-right: 8px;
   opacity: 0.7;
   clear:both;
-}
+} */
 
 /* Chart.js bar and radar charts */
-#bar,
+/* #bar,
 #radar{
     margin-bottom: 2%;
     background-color: white;
     
-} 
+}  */
 
 /* Chart.js doughnut and polar charts */
-#doughnut,
+/* #doughnut,
 #polar {
   margin-bottom: 2%;
   background-color: white;
-}
+} */
 
 /* Bubble Graph */
-#bubble {
+/* #bubble {
   margin-bottom: 2%;
-}
+} */
 
