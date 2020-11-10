@@ -1,0 +1,132 @@
+/* Navbar color */
+.bg-light{
+  background-color:rgb(11, 12, 16) !important;
+  
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+
+/* .dropdown-menu{
+  background-color: rgb(8, 8, 8) !important;
+  color:white !important;
+} */
+
+/* Image for jumbotron */
+.jumbotron {
+  background-image: url("heart.jpg") !important; 
+  background-size: cover ; 
+  color: white;
+}
+
+/* Formatting quote */
+.quote{
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+/* Trying something */
+*{
+  box-sizing:border-box;
+}
+
+/* 1st tableau */
+.tableauPlaceholder1{
+  float:left !important;
+  /* width: 33% !important; */
+  /* height: 20% !important; */
+  margin-left: 2% !important;
+  margin-right: 4% !important;
+  /* padding: 3px !important; */
+}
+
+/*2nd tableau */
+.tableauPlaceholder2{
+  /* float:left !important; */
+  /* float:right !important; */
+  /* width: 33% !important; */
+  /* height: 20% !important; */
+  margin-left: 8% !important; 
+  /* margin-right: 2% !important; */
+  /* padding: 3px !important; */
+}
+
+
+/* Tableau Table */
+.tableauPlaceholder3 {
+  /* float:left !important; */
+  width: 165% !important;
+  margin-left: 4% !important;
+  margin-bottom: 4% !important;
+  padding: 3px;
+}
+
+
+/* Remove default margin and padding from body */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(202, 92, 92) ;
+}
+
+/* Set body and html to 80% of the screen size */
+body,
+html {
+  height: 80%;
+}
+
+/* Set map to 80% of the screen size */
+/* #map{
+  height: 80%;
+  width: 80%;
+} */
+
+/* Aligning text */
+h1 {
+  text-align: center;
+  margin-top:0px;
+  padding-top: 0px;
+}
+
+/* Removing margins and padding */
+h2{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+/* Legends */
+/* .legend {
+  line-height: 18px;
+  color: #555;
+  background-color: whitesmoke;
+}
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+  clear:both;
+} */
+
+/* Chart.js bar and radar charts */
+/* #bar,
+#radar{
+    margin-bottom: 2%;
+    background-color: white;
+    
+}  */
+
+/* Chart.js doughnut and polar charts */
+/* #doughnut,
+#polar {
+  margin-bottom: 2%;
+  background-color: white;
+} */
+
+/* Bubble Graph */
+/* #bubble {
+  margin-bottom: 2%;
+} */
+
