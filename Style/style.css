@@ -1,5 +1,5 @@
-/* Navbar color */
-.bg-light{
+/* Navbar color & boxes for table and key*/
+.box, .bg-light{
   background-color:rgb(11, 12, 16) !important;
   
 }
@@ -24,6 +24,20 @@
 .quote{
   padding-right: 20%;
   padding-left: 20%;
+}
+
+.study{
+  margin-left: 2%;
+  margin-right: 5%;
+}
+.key{
+  color: white;
+}
+
+table, th, td {
+  border: 1px solid white;
+  /* padding: 25px; */
+  
 }
 
 /* Trying something */
@@ -84,49 +98,19 @@ html {
 
 /* Aligning text */
 h1 {
-  text-align: center;
+  /* text-align: center; */
   margin-top:0px;
   padding-top: 0px;
+  color: white;
 }
 
 /* Removing margins and padding */
 h2{
   margin-bottom: 0px;
   padding-bottom: 0px;
+  color: white;
 }
 
-/* Legends */
-/* .legend {
-  line-height: 18px;
-  color: #555;
-  background-color: whitesmoke;
+p{
+  color: white;
 }
-.legend i {
-  width: 18px;
-  height: 18px;
-  float: left;
-  margin-right: 8px;
-  opacity: 0.7;
-  clear:both;
-} */
-
-/* Chart.js bar and radar charts */
-/* #bar,
-#radar{
-    margin-bottom: 2%;
-    background-color: white;
-    
-}  */
-
-/* Chart.js doughnut and polar charts */
-/* #doughnut,
-#polar {
-  margin-bottom: 2%;
-  background-color: white;
-} */
-
-/* Bubble Graph */
-/* #bubble {
-  margin-bottom: 2%;
-} */
-
