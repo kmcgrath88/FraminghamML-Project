@@ -1,0 +1,117 @@
+/* Navbar color & boxes for table and key*/
+.box, .bg-light{
+  background-color:rgb(11, 12, 16) !important;
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+
+/* Image for jumbotron */
+.jumbotron {
+  background-image: url("heart.jpg") !important; 
+  background-size: cover ; 
+  color: white;
+}
+
+/* Formatting quote */
+.quote{
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+.study{
+  margin-left: 2%;
+  margin-right: 5%;
+}
+
+
+table, th, td {
+  border: 1px solid white;
+  /* align-content: center; */
+  /* padding: 25px; */
+  
+}
+
+/* Trying something */
+*{
+  box-sizing:border-box;
+}
+
+/* 1st tableau */
+.tableauPlaceholder1{
+  float:left !important;
+  flex-direction: column !important;
+  margin-left: 3% !important;
+}
+
+/*2nd tableau */
+.tableauPlaceholder2{
+  float:left !important;
+  flex-direction: column !important;
+  margin-left: 3% !important;
+}
+
+
+/* Tableau Table */
+.tableauPlaceholder3 {
+  /* float:left !important; */
+  flex-direction: column !important;
+  margin-left: 4% !important;
+  margin-bottom: 4% !important;
+  padding: 3px;
+}
+
+
+/* Remove default margin and padding from body */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(202, 92, 92) ;
+  max-width: 100%;
+  overflow-x: hidden
+}
+
+/* Aligning text */
+h1 {
+  /* text-align: center; */
+  margin-top:0px;
+  padding-top: 0px;
+  color: white;
+}
+
+/* Removing margins and padding */
+h2{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  color: white;
+}
+
+p{
+  color: white;
+}
+
+.key-container {
+  position: sticky;
+  top: 100px;
+  display: inline-block;
+  width: 30%;
+  margin-left: 8%;
+  vertical-align: top;
+  color: white;
+  background-color:rgb(11, 12, 16) !important;
+  text-align: center
+}
+
+.key-table{
+  margin-left:10px;
+  margin-bottom: 10px;
+  margin-right: 10px
+  
+}
+
+.column-two {
+  display: inline-flex;
+  width: 60%;
+  flex-direction: column
+}

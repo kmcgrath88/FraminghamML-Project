@@ -5,125 +5,227 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, , maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Cancer In America</title>
+  <title>Framingham Heart Study</title>
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Do we need this??? -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Our CSS-->
-  <link rel="stylesheet" type="text/css" href="../static/js/style.css">
+  <link rel="stylesheet" type="text/css" href="Style/style.css">
 
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin="">
 </head>
 
-<body>
-  <div class="container">
-    <div class="row">
-      <!-- Jumbotron for title, quote, and pic -->
-      <div class="col-md-12 jumbotron text-center">
-        <h1><Strong>Cancer in America</Strong></h1>
-        <h2 style="font-size:18px"><Strong>Incidence and Mortality</Strong></h2>
-        <p style="font-size:10px"> (Data from 2016)</p>
-        <p class="quote" style="font-size:16px"> "Each year in the United States, more than 1.6 million people are
-          diagnosed with cancer, and nearly 600,000 die from it,
-          making it the second leading cause of death. The cost of cancer care continues to rise and is expected to
-          reach almost $174 billion by 2020."
-          <br> - <i style="font-size:14px">Centers for Disease Control and Prevention </i></p>
-      </div>
+<!-- Trying something -->
+<!-- Interactive Navbar -->
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">Study Information & Visualizations</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="WebVisualizations/comparisons.html">Summary <span
+              class="sr-only">(current)</span></a>
+        </li>
+      </li>
+  </div>
+</nav>
+
+
+<!-- KEEP ALL BELOW -->
+<!-- <body> -->
+<div class="container">
+  <div class="row">
+
+    <!-- Jumbotron for title, quote, and pic -->
+    <div class="col-md-12 jumbotron text-center">
+      <h1><Strong>Framingham Heart Study</Strong></h1>
+      <br>
+      <h2 style="font-size:18px"><Strong> A long-term prospective study of the etiology of cardiovascular disease among
+          a
+          population of subjects <br> in the community of Framingham, MA beginning in 1948.</Strong></h2>
+      <br>
     </div>
   </div>
+</div>
+<!-- <div class="container"> -->
+  
 
-  <div class='tableauPlaceholder' id='viz1604800162693' style='position: relative'><noscript><a href='#'><img alt=' '
-          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4D&#47;4D7G3QXXC&#47;1_rss.png'
+      <div class="col-md-12 box">
+        <h2>About the Study</h2>
+        <br>
+      
+        <p>This was the first prospective study of cardiovascular disease and identified the concept of risk factors and
+          their joint effects.
+          Study began in 1948, with 5,209 subjects initially enrolled.
+          Each subject was examined biennially and were regularly surveilled for cardiovascular disease outcomes.
+          Resource for further information about the study: https://www.nhlbi.nih.gov/science/framingham-heart-study-fhs
+          Key findings: importance of high blood pressure and high cholesterol as risk factors for cardiovascular
+          disease
+        </p>
+
+        <h2>Analysis</h2>
+        <br>
+        <p>
+          This data is a subset of the entire study data set obtained from the NHBLI as a teaching data set
+          (https://biolincc.nhlbi.nih.gov/teaching/).
+          4,434 participants included in this data set, with clinical data obtained from 1-3 examinations from 1956 -
+          1968.
+          Each participant was followed for a total of 24 years.
+          Outcomes of these events were recorded: Angina Pectoris, Myocardial Infarction, Stroke, Death
+          Risk factors recorded: sex, age, systolic blood pressure, diastolic blood pressure, use of anti-hypertensive
+          medications, current cigarette smoking at exam, number of cigarettes smoked per day, serum total cholesterol,
+          BMI, casual serum glucose, diabetes, heart rate, prevalent cardiovascular disease conditions at time of exam
+
+        </p>
+      </div>
+    <!-- </div> -->
+ 
+    <!-- <div class = 'col-md-2'></div> -->
+    <!--Key-->
+   
+    <!-- <div class='col-md-4 key' style = 'position:sticky; right:80px; top:100px; align-self:flex-start; width:50%'> -->
+      
+      <div class="key-container">
+        <h2>Key For Graphs</h2>
+        <br>
+        <div class="row key-table">
+            <table style="width:100%">
+              <tr>
+                <th>Variable </th>
+                <th>Description</th>
+                <th>Variable</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>ANGINA</td>
+                <td>Angina Pectoris</td>
+                <td>ANYCHD</td>
+                <td>Angina Pectoris, Myocardial infarction, Coronary Insufficiency, or Fatal
+                  Coronary Heart Disease</td>
+              </tr>
+              <tr>
+                <td>MI_FCHD</td>
+                <td>Hospitalized Myocardial Infarction or Fatal Coronary Heart Disease</td>
+                <td>CVD</td>
+                <td>Myocardial infarction, Fatal
+                  Coronary Heart Disease, Atherothrombotic infarction, Cerebral
+                  Embolism, Intracerebral Hemorrhage, or Subarachnoid Hemorrhage or
+                  Fatal Cerebrovascular Disease</td>
+              </tr>
+              <tr>
+                <td>HYPERTEN</td>
+                <td>Hypertensive. Defined as the first exam treated for high blood pressure
+                  or second exam in which either Systolic is &#8805; 140 mmHg or Diastolic &#8805;
+                  90mmHg</td>
+                <td>STROKE</td>
+                <td>Atherothrombotic infarction, Cerebral Embolism, Intracerebral
+                  Hemorrhage, or Subarachnoid Hemorrhage or Fatal Cerebrovascular
+                  Disease</td>
+              </tr>
+            </table>
+           
+  </div>
+</div>
+  
+  
+  <!-- </div> -->
+
+<div class='column-two'>
+  <div class='container' >
+  <!-- <div class='col-md-4'> -->
+    <div class='tableauPlaceholder1' id='viz1604945782899' style='position: relative'><noscript><a href='#'><img alt=' '
+            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;AgeEvents2&#47;1_rss.png'
+            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='FarminghamML-Project&#47;AgeEvents2' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image'
+          value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;AgeEvents2&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en' /></object></div>
+    <script
+      type='text/javascript'>                    var divElement = document.getElementById('viz1604945782899'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '800px'; vizElement.style.height = '827px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+  </div>
+  <div class = 'container'>
+    <div class='tableauPlaceholder2' id='viz1604945707749' style='position: relative'><noscript><a href='#'><img alt=' '
+            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;ContributingFactors&#47;1_rss.png'
+            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='FarminghamML-Project&#47;ContributingFactors' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image'
+          value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;ContributingFactors&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en' />
+        <param name='filter' value='publish=yes' /></object></div>
+    <script
+      type='text/javascript'>                    var divElement = document.getElementById('viz1604945707749'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '800px'; vizElement.style.height = '827px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+  </div>
+  <div class='container'>
+  <div class='tableauPlaceholder3' id='viz1604943669405' style='position: relative'><noscript><a href='#'><img alt=' '
+          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;ChartDash&#47;1_rss.png'
           style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
       <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
       <param name='embed_code_version' value='3' />
-      <param name='path' value='shared&#47;4D7G3QXXC' />
+      <param name='site_root' value='' />
+      <param name='name' value='FarminghamML-Project&#47;ChartDash' />
+      <param name='tabs' value='no' />
       <param name='toolbar' value='yes' />
       <param name='static_image'
-        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4D&#47;4D7G3QXXC&#47;1.png' />
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;ChartDash&#47;1.png' />
       <param name='animate_transition' value='yes' />
       <param name='display_static_image' value='yes' />
       <param name='display_spinner' value='yes' />
       <param name='display_overlay' value='yes' />
       <param name='display_count' value='yes' />
-      <param name='language' value='en' /></object></div>
+      <param name='language' value='en' />
+      <param name='filter' value='publish=yes' /></object></div>
   <script
-    type='text/javascript'>                    var divElement = document.getElementById('viz1604800162693'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '1016px'; vizElement.style.height = '1014px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    type='text/javascript'>                    var divElement = document.getElementById('viz1604943669405'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '1350px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '487px'; vizElement.style.maxHeight = '587px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '1350px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '487px'; vizElement.style.maxHeight = '587px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
-  <!-- Button to scrape most recent cancer article title, text, date, and link -->
-  <!-- <div class='row' style="margin-left: 3.9%;">
-    <div class='col-md-12'>
-      <p style="font-size:16px"><a class="btn btn-primary btn-lg" href="/scrape" role="button">Click Here For Recent
-          Cancer News:</a></p>
-      <p style="font-size:16px"><strong><a href={{cancer_data.news_url}} style="color: black"
-            target="_blank">{{cancer_data.article_title}}</a></strong> -
-        {{cancer_data.date}} <br>
-        {{cancer_data.article_text}}</p>
-    </div>
-  </div> -->
+  </div>
+</div>
 
+<!-- D3 CDN -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
 
-  <!-- The div where we will inject our map -->
-  <!-- <div id="map" style="margin: auto; width: 90%; height: 425px;"></div>
+<!-- JS -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script> -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<!-- <script type="text/javascript" src="../static/js/Chart.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
+<!-- <script type="text/javascript" src="../static/js/chartjs-plugin-style.js"></script> -->
+<!-- <script type="text/javascript" src="../static/js/chartjs-plugin-colorschemes.js"></script> -->
+<!-- <script type="text/javascript" src="../static/js/logic.js"></script> -->
 
-  <br>
+<!-- Bootstrap necessities???? not sure if we need -->
 
-  <div class="container-fluid">
-    <div class="row">
-      Bar graph-->
-  <!-- <div class="col-md-5" style="width: 50%; height: 60%;display: inline-block;">
-        <canvas id="bar"></canvas>
-      </div> -->
-
-  <!-- Doughnut graph-->
-  <!-- <div class="col-md-5 offset-md-1" style="width: 50%; height: 60%;display: inline-block;">
-        <canvas id="doughnut"></canvas>
-      </div>
-    </div> -->
-
-  <!-- <div class="row"> -->
-  <!-- Radar graph -->
-  <!-- <div class="col-md-5" style="width: 50%; height: 60%;display: inline-block;">
-        <canvas id="radar"></canvas>
-      </div> -->
-
-  <!-- Polar-area graph -->
-  <!-- <div class="col-md-5 offset-md-1" style="width: 50%; height: 60%;display: inline-block;">
-        <canvas id="polar"></canvas>
-      </div>
-    </div> -->
-
-  <!--Bubble graph-->
-  <!-- <div class="row" style=" margin: auto; width: 90%; height: 60%; align-content: center">
-      <div id="bubble"></div>
-    </div>
-  </div> -->
-
-  <!-- API key
-  <script type="text/javascript" src="../static/js/config.js"></script>
-
-  Leaflet JS -->
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script> -->
-
-  <!-- D3 CDN -->
-  <script src="https://d3js.org/d3.v4.min.js"></script>
-
-  <!-- JS -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script> -->
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script type="text/javascript" src="../static/js/Chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
-  <script type="text/javascript" src="../static/js/chartjs-plugin-style.js"></script>
-  <script type="text/javascript" src="../static/js/chartjs-plugin-colorschemes.js"></script>
-  <script type="text/javascript" src="../static/js/logic.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 
