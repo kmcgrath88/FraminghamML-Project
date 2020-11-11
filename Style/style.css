@@ -1,17 +1,11 @@
 /* Navbar color & boxes for table and key*/
 .box, .bg-light{
   background-color:rgb(11, 12, 16) !important;
-  
 }
 
 .navbar-brand, .nav-link {
   color: white !important;
 }
-
-/* .dropdown-menu{
-  background-color: rgb(8, 8, 8) !important;
-  color:white !important;
-} */
 
 /* Image for jumbotron */
 .jumbotron {
@@ -30,12 +24,11 @@
   margin-left: 2%;
   margin-right: 5%;
 }
-.key{
-  color: white;
-}
+
 
 table, th, td {
   border: 1px solid white;
+  /* align-content: center; */
   /* padding: 25px; */
   
 }
@@ -48,29 +41,22 @@ table, th, td {
 /* 1st tableau */
 .tableauPlaceholder1{
   float:left !important;
-  /* width: 33% !important; */
-  /* height: 20% !important; */
-  margin-left: 2% !important;
-  margin-right: 4% !important;
-  /* padding: 3px !important; */
+  flex-direction: column !important;
+  margin-left: 3% !important;
 }
 
 /*2nd tableau */
 .tableauPlaceholder2{
-  /* float:left !important; */
-  /* float:right !important; */
-  /* width: 33% !important; */
-  /* height: 20% !important; */
-  margin-left: 8% !important; 
-  /* margin-right: 2% !important; */
-  /* padding: 3px !important; */
+  float:left !important;
+  flex-direction: column !important;
+  margin-left: 3% !important;
 }
 
 
 /* Tableau Table */
 .tableauPlaceholder3 {
   /* float:left !important; */
-  width: 165% !important;
+  flex-direction: column !important;
   margin-left: 4% !important;
   margin-bottom: 4% !important;
   padding: 3px;
@@ -82,19 +68,9 @@ body {
   padding: 0;
   margin: 0;
   background-color: rgb(202, 92, 92) ;
+  max-width: 100%;
+  overflow-x: hidden
 }
-
-/* Set body and html to 80% of the screen size */
-body,
-html {
-  height: 80%;
-}
-
-/* Set map to 80% of the screen size */
-/* #map{
-  height: 80%;
-  width: 80%;
-} */
 
 /* Aligning text */
 h1 {
@@ -113,4 +89,29 @@ h2{
 
 p{
   color: white;
+}
+
+.key-container {
+  position: sticky;
+  top: 100px;
+  display: inline-block;
+  width: 30%;
+  margin-left: 8%;
+  vertical-align: top;
+  color: white;
+  background-color:rgb(11, 12, 16) !important;
+  text-align: center
+}
+
+.key-table{
+  margin-left:10px;
+  margin-bottom: 10px;
+  margin-right: 10px
+  
+}
+
+.column-two {
+  display: inline-flex;
+  width: 60%;
+  flex-direction: column
 }

@@ -7,9 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Framingham Heart Study</title>
 
-  <!-- Bootstrap -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-
   <!-- Do we need this??? -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -17,10 +14,6 @@
   <!-- Our CSS-->
   <link rel="stylesheet" type="text/css" href="Style/style.css">
 
-  <!-- Leaflet CSS -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""> -->
 </head>
 
 <!-- Trying something -->
@@ -33,15 +26,10 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false"> More Information
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <!--Drop-down-->
-          <a class="dropdown-item" href="WebVisualizations/perCont.html">About Our Project</a>
-          <a class="dropdown-item" href="WebVisualizations/highCount.html">Our Findings</a>
-        </div>
+        <li class="nav-item active">
+          <a class="nav-link" href="WebVisualizations/comparisons.html">Summary <span
+              class="sr-only">(current)</span></a>
+        </li>
       </li>
   </div>
 </nav>
@@ -60,27 +48,16 @@
           a
           population of subjects <br> in the community of Framingham, MA beginning in 1948.</Strong></h2>
       <br>
-      <!-- <p style="font-size:10px"> Year data is from</p> -->
-      <!-- <p class="quote" style="font-size:16px"> Quote or info about project here -->
-      <!-- <br> - <i style="font-size:14px"> Source</i></p> -->
     </div>
   </div>
 </div>
 <!-- <div class="container"> -->
-  <div class='row'>
+  
 
-    <!-- Summary: Global Suicide -->
-    <div class="col-md-7 study">
-      <!--col-md-8 to fit in column with visualizations-->
       <div class="col-md-12 box">
         <h2>About the Study</h2>
         <br>
-        <!-- <div class="thumbnail">
-          <a href = "WebVisualizations/Overall.html"><img class="img-thumbnail img-fluid pad" src="WebVisualizations/visualizations/1990to2015LineChart.png"
-            width="50%" alt="Responsive image" ALIGN='left'>
-          </a>
-        </div> -->
-        <!--Summary-->
+      
         <p>This was the first prospective study of cardiovascular disease and identified the concept of risk factors and
           their joint effects.
           Study began in 1948, with 5,209 subjects initially enrolled.
@@ -105,15 +82,17 @@
 
         </p>
       </div>
-    </div>
+    <!-- </div> -->
+ 
     <!-- <div class = 'col-md-2'></div> -->
     <!--Key-->
-    <div class='col-md-4 key'>
+   
+    <!-- <div class='col-md-4 key' style = 'position:sticky; right:80px; top:100px; align-self:flex-start; width:50%'> -->
       
-      <div class="col-md-12 box">
+      <div class="key-container">
         <h2>Key For Graphs</h2>
-        <hr>
-        <div class="row">
+        <br>
+        <div class="row key-table">
             <table style="width:100%">
               <tr>
                 <th>Variable </th>
@@ -125,37 +104,39 @@
                 <td>ANGINA</td>
                 <td>Angina Pectoris</td>
                 <td>ANYCHD</td>
-                <td>Angina Pectoris, Myocardial infarction (Hospitalized and silent or
-                  unrecognized), Coronary Insufficiency (Unstable Angina), or Fatal
+                <td>Angina Pectoris, Myocardial infarction, Coronary Insufficiency, or Fatal
                   Coronary Heart Disease</td>
               </tr>
               <tr>
-                <td>HOSPMI</td>
-                <td>Hospitalized Myocardial Infarction</td>
+                <td>MI_FCHD</td>
+                <td>Hospitalized Myocardial Infarction or Fatal Coronary Heart Disease</td>
                 <td>CVD</td>
-                <td>Myocardial infarction (Hospitalized and silent or unrecognized), Fatal
+                <td>Myocardial infarction, Fatal
                   Coronary Heart Disease, Atherothrombotic infarction, Cerebral
                   Embolism, Intracerebral Hemorrhage, or Subarachnoid Hemorrhage or
                   Fatal Cerebrovascular Disease</td>
               </tr>
               <tr>
-                <td>MI_FCHD</td>
-                <td>Hospitalized Myocardial Infarction or Fatal Coronary Heart Disease</td>
+                <td>HYPERTEN</td>
+                <td>Hypertensive. Defined as the first exam treated for high blood pressure
+                  or second exam in which either Systolic is &#8805; 140 mmHg or Diastolic &#8805;
+                  90mmHg</td>
                 <td>STROKE</td>
                 <td>Atherothrombotic infarction, Cerebral Embolism, Intracerebral
                   Hemorrhage, or Subarachnoid Hemorrhage or Fatal Cerebrovascular
                   Disease</td>
               </tr>
             </table>
+           
   </div>
 </div>
-    </div>
-  </div>
+  
+  
+  <!-- </div> -->
 
-
-<!-- Comparing Ages To Events Story style='position: relative' -->
-<div class='row'>
-  <div class='col-md-4'>
+<div class='column-two'>
+  <div class='container' >
+  <!-- <div class='col-md-4'> -->
     <div class='tableauPlaceholder1' id='viz1604945782899' style='position: relative'><noscript><a href='#'><img alt=' '
             src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;AgeEvents2&#47;1_rss.png'
             style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
@@ -176,8 +157,7 @@
     <script
       type='text/javascript'>                    var divElement = document.getElementById('viz1604945782899'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '800px'; vizElement.style.height = '827px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
   </div>
-  <!-- Average Cigs Per Day And Average of All Events -->
-  <div class='col-md-4'>
+  <div class = 'container'>
     <div class='tableauPlaceholder2' id='viz1604945707749' style='position: relative'><noscript><a href='#'><img alt=' '
             src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;ContributingFactors&#47;1_rss.png'
             style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
@@ -199,9 +179,7 @@
     <script
       type='text/javascript'>                    var divElement = document.getElementById('viz1604945707749'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '800px'; vizElement.style.height = '827px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
   </div>
-</div>
-<!-- Avg Time Vs Age Group Table -->
-<div class='row'>
+  <div class='container'>
   <div class='tableauPlaceholder3' id='viz1604943669405' style='position: relative'><noscript><a href='#'><img alt=' '
           src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;ChartDash&#47;1_rss.png'
           style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
@@ -223,6 +201,7 @@
   <script
     type='text/javascript'>                    var divElement = document.getElementById('viz1604943669405'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '1350px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '487px'; vizElement.style.maxHeight = '587px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '1350px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '487px'; vizElement.style.maxHeight = '587px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
+  </div>
 </div>
 
 <!-- D3 CDN -->
@@ -231,13 +210,13 @@
 <!-- JS -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script> -->
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<script type="text/javascript" src="../static/js/Chart.js"></script>
+<!-- <script type="text/javascript" src="../static/js/Chart.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
-<script type="text/javascript" src="../static/js/chartjs-plugin-style.js"></script>
-<script type="text/javascript" src="../static/js/chartjs-plugin-colorschemes.js"></script>
-<script type="text/javascript" src="../static/js/logic.js"></script>
+<!-- <script type="text/javascript" src="../static/js/chartjs-plugin-style.js"></script> -->
+<!-- <script type="text/javascript" src="../static/js/chartjs-plugin-colorschemes.js"></script> -->
+<!-- <script type="text/javascript" src="../static/js/logic.js"></script> -->
 
 <!-- Bootstrap necessities???? not sure if we need -->
 
