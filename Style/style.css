@@ -124,3 +124,22 @@ p{
   width: 60%;
   flex-direction: column
 }
+
+/* Summary Page */
+.summary-tables{
+  display: inline-flex;
+  width: 60%;
+  flex-direction: column;
+  /* margin-right:2%; */
+}
+
+img{
+  width:99%;
+}
+
+.img2{
+  width:85%;
+  /* height:85%; */
+  background-color:white;
+  /* margin-left: 2px; */
+}

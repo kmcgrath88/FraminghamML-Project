@@ -24,14 +24,29 @@
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="summary.html">Summary <span class="sr-only">(current)</span></a>
             </li>
             </li>
     </div>
-</nav>
+</nav> -->
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false"> More Information
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <!--Drop-down-->
+          <a class="dropdown-item" href="summary.html">Our Summary</a>
+          <a class="dropdown-item" href="WebVisualizations/perCont.html">Extra Data</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </nav>
 
 
 <!-- KEEP ALL BELOW -->
@@ -121,9 +136,20 @@
 
     </div>
 </div>
-<div class='column-two'>
+<div class='summary-tables'>
     <div class='container' >
-        <img src='Graphs/angina.png'>
+        <img src='Images/hypertension.png'>
+        <br>
+        <br>
+        <img src='Images/mi_fchd.png'>
+        <br>
+        <br>
+        <img class='img2' src='Images/strk_rff_importance.png'>
+        <br>
+        <br>
+        <img class='img2' src='Images/hyp_rff_importance.png'>
+        <br>
+        <br>
     </div>
 </div>
 
