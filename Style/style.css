@@ -136,6 +136,7 @@ p{
 img{
   width:99%;
   margin-bottom: 2%;
+  border: 5px solid black;
 }
 
 .img2{
@@ -143,10 +144,12 @@ img{
   /* height:85%; */
   background-color:white;
   /* margin-left: 2px; */
+  border: 5px solid black;
 }
 
 /* Extra Page */
 .extra{
   margin-top:1%;
   margin-bottom:3%;
+  
 }
