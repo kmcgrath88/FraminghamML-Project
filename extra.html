@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, , maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Framingham Heart Study</title>
+
+    <!-- Do we need this??? -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Our CSS-->
+    <link rel="stylesheet" type="text/css" href="Style/style.css">
+
+</head>
+
+<!-- Trying something -->
+<!-- Interactive Navbar -->
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Study Information & Visualizations</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="summary.html">Summary <span class="sr-only">(current)</span></a>
+            </li>
+            </li>
+    </div>
+</nav> -->
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false"> More Information
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <!--Drop-down-->
+          <a class="dropdown-item" href="summary.html">Our Summary</a>
+          <a class="dropdown-item" href="extra.html">Extra Data</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </nav>
+
+
+<!-- KEEP ALL BELOW -->
+<!-- <body> -->
+<div class="container">
+    <div class="row">
+
+        <!-- Jumbotron for title, quote, and pic -->
+        <div class="col-md-12 jumbotron text-center">
+            <h1><Strong>Framingham Heart Study</Strong></h1>
+            <br>
+            <br>
+            <h2 style="font-size:24px"><Strong> Our Findings</Strong></h2>
+            <br>
+        </div>
+    </div>
+</div>
+<!-- <div class="container"> -->
+
+
+<div class="col-md-12 box">
+    <h2 class = 'extra'>Below are all of our other findings.</h2>
+   
+</div>
+<!-- </div> -->
+
+<!-- <div class = 'col-md-2'></div> -->
+<!--Key-->
+
+<!-- <div class='col-md-4 key' style = 'position:sticky; right:80px; top:100px; align-self:flex-start; width:50%'> -->
+
+<div class="key-container">
+    <h2>Key For Graphs</h2>
+    <br>
+    <div class="row key-table">
+        <table style="width:100%">
+            <tr>
+                <th>Variable </th>
+                <th>Description</th>
+                <th>Variable</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>ANGINA</td>
+                <td>Angina Pectoris</td>
+                <td>ANYCHD</td>
+                <td>Angina Pectoris, Myocardial infarction, Coronary Insufficiency, or Fatal
+                    Coronary Heart Disease</td>
+            </tr>
+            <tr>
+                <td>MI_FCHD</td>
+                <td>Hospitalized Myocardial Infarction or Fatal Coronary Heart Disease</td>
+                <td>CVD</td>
+                <td>Myocardial infarction, Fatal
+                    Coronary Heart Disease, Atherothrombotic infarction, Cerebral
+                    Embolism, Intracerebral Hemorrhage, or Subarachnoid Hemorrhage or
+                    Fatal Cerebrovascular Disease</td>
+            </tr>
+            <tr>
+                <td>HYPERTEN</td>
+                <td>Hypertensive. Defined as the first exam treated for high blood pressure
+                    or second exam in which either Systolic is &#8805; 140 mmHg or Diastolic &#8805;
+                    90mmHg</td>
+                <td>STROKE</td>
+                <td>Atherothrombotic infarction, Cerebral Embolism, Intracerebral
+                    Hemorrhage, or Subarachnoid Hemorrhage or Fatal Cerebrovascular
+                    Disease</td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+<div class='summary-tables'>
+    <div class='container' >
+        <img src='Images/angina.png'>
+        
+        <img src='Images/anychd.png'>
+
+        <img src='Images/cvd.png'>
+
+        <img src='Images/myoinf.png'>
+
+        <img src='Images/stroke.png'>
+
+        <img src='Images/death.png'>
+        
+        <img class='img2' src='Images/ang_rff_importance.png'>
+        
+        <img class='img2' src='Images/anychd_rff_importance.png'>
+
+        <img class='img2' src='Images/cvd_rff_importance.png'>
+
+        <img class='img2' src='Images/mi_rff_importance.png'>
+        
+    </div>
+</div>
+
+
+<!-- Bootstrap necessities???? not sure if we need -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
