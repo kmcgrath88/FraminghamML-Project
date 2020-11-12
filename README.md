@@ -37,7 +37,7 @@ The data used in this project is a subset of the entire study data set obtained 
 * Stroke
 * Death from any cause
 
-![subjects per outcome](images/subjects_per_outcome.png)
+![subjects per outcome](/images/subjects_per_outcome.png)
 
 
 ## Data Processing
