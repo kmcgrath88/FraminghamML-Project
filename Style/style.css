@@ -90,7 +90,7 @@ h1 {
 }
 
 /* Removing margins and padding */
-h2{
+h2, h4{
   margin-bottom: 0px;
   padding-bottom: 0px;
   color: white;
