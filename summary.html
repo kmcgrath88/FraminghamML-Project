@@ -33,20 +33,21 @@
     </div>
 </nav> -->
 
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false"> More Information
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <!--Drop-down-->
-          <a class="dropdown-item" href="summary.html">Our Summary</a>
-          <a class="dropdown-item" href="extra.html">Extra Data</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-  </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"> More Information
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <!--Drop-down-->
+                    <a class="dropdown-item" href="summary.html">Our Summary</a>
+                    <a class="dropdown-item" href="extra.html">Extra Data</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 
 <!-- KEEP ALL BELOW -->
@@ -59,7 +60,7 @@
             <h1><Strong>Framingham Heart Study</Strong></h1>
             <br>
             <br>
-            <h2 style="font-size:24px"><Strong> Our Findings</Strong></h2>
+            <h2 style="font-size:24px"><Strong> Our Summary</Strong></h2>
             <br>
         </div>
     </div>
@@ -68,32 +69,47 @@
 
 
 <div class="col-md-12 box">
-    <h2>Initial Data</h2>
+    <h2>Data Processing</h2>
     <br>
 
     <p>
-        Data was obtained as a .csv file with 11,627 rows of data from 4,434 subjects. Each row contains risk factor and event data 
-        for a single subject from a given examination period. Each subject has between 1 - 3 examination periods (roughly 2 years between each examination period for a given
-        subject). For these analyses we focused on period #1 (baseline) as it had the most data (4,434 subjects vs. 3,263 subjects
-        in period #3). For each outcome which we wanted to generate a classifier for we filtered out subjects with the prevalent
-        disease condition (e.g. for the stroke classifier each subject who had already had a stroke prior to their
-        period 1 examination (PREVSTRK = 1) were filtered out of the data set). Filtered out data rows with missing values prior to running classifiers.
+        The initial data was obtained as a .csv file with 11,627 rows of data from 4,434 subjects. Each row contains
+        risk factor and event data for a single subject from a given examination period. Each subject has between 1 - 3
+        examination periods (roughly 2 years between each examination period for a given subject). For these analyses we
+        focused on period #1 (baseline) as it had the most data (4,434 subjects vs. 3,263 subjects in period #3). An
+        outcome-specific data file was generated for each outcome, in which the subjects with the relevant prevelant
+        disease condition were filtered out (e.g. for the stroke classifier each subject who had already had a stroke
+        prior to their period 1 examination (PREVSTRK = 1) were filtered out of the data set). In addition, any rows
+        with missing values were removed from the outcome-specific data file prior to running classifiers.
 
     </p>
+    <h2>Machine Learning Exploration</h2>
+    <br>
+    <p>Python's scikit-learn was used to run predictive analyses for each outcome across 4 different machine learning
+        algorithms: logistic regression, k-nearest neighbor, random forest, and support vector machine. The performance
+        of
+        each algorithm was assessed according to predicted and actual outcomes and the following testing metrics:
+        accuracy,
+        precision, recall, and f1-measure.
+    </p>
+    <h2>Our Findings</h2>
+    <br>
+    <p>We found that the class imbalance in a predicted outcome significantly affected which testing metric accurately
+        measured the performance of machine learning algorithm. For outcomes with highly imbalanced classes (e.g.
+        MI_CHD: negative event = , positive event = ) using test accuracy is a very misleading metric, as the number of
+        correctly called negatives far outweighs the small percentage of correctly called positives. A better test
+        metric then, is the f1- measure, which is the harmonic mean of the precision and recall.
 
-    <h2>Our Analysis</h2>
+        We also found that support vector machines (SVMs) seemed to perform better than the other machine learning
+        algorithms, especially for outcomes with imbalanced classes. SVMs tended to have the highest F1-measure for each
+        outcome and generally predicted a greater number of true positives than the other algorithms.</p>
     <br>
     <p>
 
 
     </p>
 </div>
-<!-- </div> -->
 
-<!-- <div class = 'col-md-2'></div> -->
-<!--Key-->
-
-<!-- <div class='col-md-4 key' style = 'position:sticky; right:80px; top:100px; align-self:flex-start; width:50%'> -->
 
 <div class="key-container">
     <h2>Key For Graphs</h2>
@@ -135,15 +151,15 @@
     </div>
 </div>
 <div class='summary-tables'>
-    <div class='container' >
+    <div class='container'>
         <img src='Images/hyp2.png'>
-        
+
         <img src='Images/mi_fchd2.png'>
-        
+
         <img class='img2' src='Images/strk_rff_importance.png'>
-        
+
         <img class='img2' src='Images/hyp_rff_importance.png'>
-        
+
     </div>
 </div>
 

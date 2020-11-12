@@ -23,13 +23,13 @@ The data used in this project is a subset of the entire study data set obtained 
 * Serum total cholesterol
 * BMI			
 * Casual serum glucose
-* dDiabetes		
+* Diabetes		
 * Heart rate
 * Prevalent cardiovascular disease conditions at time of exam
 
 **Outcomes recorded:**
 * Angina Pectoris	
-* Any Coronary Healrt Disease
+* Any Coronary Heart Disease
 * Cerebrovascular Disease
 * Hospitalization for Myocardial Infarction
 * Myocardial Infarction or Fatal Coronary Heart Disease
@@ -47,7 +47,7 @@ The initial data was obtained as a .csv file with 11,627 rows of data from 4,434
 
 ## Machine Learning Exploration
 
-Python's [scikit-learn](https://scikit-learn.org/stable/index.html) was used to run predictive analyses four each outcome across 4 different machine learning algorithms:
+Python's [scikit-learn](https://scikit-learn.org/stable/index.html) was used to run predictive analyses for each outcome across 4 different machine learning algorithms:
 * logistic regression
 * k-nearest neighbor
 * random forest
@@ -74,4 +74,4 @@ Visualizations of the data exploration and analyses can be found at the [project
 
 We found that the class imbalance in a predicted outcome significantly affected which testing metric accurately measured the performance of machine learning algorithm.  For outcomes with highly imbalanced classes (e.g. MI_CHD: negative event = , positive event =  ) using test accuracy is a very misleading metric, as the number of correctly called negatives far outweighs the small percentage of correctly called positives.  A better test metric then, is the f1- measure, which is the harmonic mean of the precision and recall.  
 
-We also found that support vector machines (SVMs) seemed to peform better than the other machine learning algorithms, especially for outcomes with imbalanced classes.  SVMs tended to have the highest F1-measure for each outcome and generally predicted a greater number of true positives than the other algorithms.
+We also found that support vector machines (SVMs) seemed to perform better than the other machine learning algorithms, especially for outcomes with imbalanced classes.  SVMs tended to have the highest F1-measure for each outcome and generally predicted a greater number of true positives than the other algorithms.

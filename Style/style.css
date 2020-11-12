@@ -64,7 +64,6 @@ table, th, td {
 
 /* Tableau Table */
 .tableauPlaceholder3 {
-  /* float:left !important; */
   flex-direction: column !important;
   margin-left: 4% !important;
   margin-bottom: 4% !important;
