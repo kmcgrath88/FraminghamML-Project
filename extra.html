@@ -7,16 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Framingham Heart Study</title>
 
-    <!-- Do we need this??? -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Our CSS-->
     <link rel="stylesheet" type="text/css" href="Style/style.css">
-
 </head>
 
-<!-- Trying something -->
 <!-- Interactive Navbar -->
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <a class="navbar-brand" href="index.html">Study Information & Visualizations</a>
@@ -24,33 +22,24 @@
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="summary.html">Summary <span class="sr-only">(current)</span></a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"> More Information
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <!--Drop-down-->
+                    <a class="dropdown-item" href="summary.html">Our Summary</a>
+                    <a class="dropdown-item" href="extra.html">Extra Data</a>
+                </div>
             </li>
-            </li>
+        </ul>
     </div>
-</nav> -->
+</nav>
 
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false"> More Information
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <!--Drop-down-->
-          <a class="dropdown-item" href="summary.html">Our Summary</a>
-          <a class="dropdown-item" href="extra.html">Extra Data</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-  </nav>
-
-
-<!-- KEEP ALL BELOW -->
-<!-- <body> -->
+<body>
 <div class="container">
     <div class="row">
 
@@ -64,14 +53,13 @@
         </div>
     </div>
 </div>
-<!-- <div class="container"> -->
 
-
+<!-- Other Findings -->
 <div class="col-md-12 box">
-    <h2 class = 'extra'>Below are all of our other findings.</h2>
+    <h2 class='extra'>Below are all of our other findings.</h2>
 </div>
 
-
+<!-- Key -->
 <div class="key-container">
     <h2>Key For Graphs</h2>
     <br>
@@ -108,13 +96,14 @@
                     Disease</td>
             </tr>
         </table>
-
     </div>
 </div>
+
+<!-- Graphs -->
 <div class='summary-tables'>
-    <div class='container' >
+    <div class='container'>
         <img src='Images/angina.png'>
-        
+
         <img src='Images/anychd.png'>
 
         <img src='Images/cvd.png'>
@@ -124,21 +113,18 @@
         <img src='Images/stroke.png'>
 
         <img src='Images/death.png'>
-        
+
         <img class='img2' src='Images/ang_rff_importance.png'>
-        
+
         <img class='img2' src='Images/anychd_rff_importance.png'>
 
         <img class='img2' src='Images/cvd_rff_importance.png'>
 
         <img class='img2' src='Images/mi_rff_importance.png'>
-        
     </div>
 </div>
 
-
-<!-- Bootstrap necessities???? not sure if we need -->
-
+<!-- Bootstrap necessities -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

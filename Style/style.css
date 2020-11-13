@@ -1,44 +1,25 @@
-/* Navbar color & boxes for table and key*/
+/* Navbar*/
 .bg-light{
   background-color:rgb(11, 12, 16) !important;
 }
-.box{
-  background-color:rgb(11, 12, 16) !important;
-  /* margin: 5%; */
-  text-align: center;
-
-}
-
 .navbar-brand, .nav-link {
   color: white !important;
 }
 
-/* Image for jumbotron */
+/* Info Block */
+.box{
+  background-color:rgb(11, 12, 16) !important;
+  text-align: center;
+  margin-bottom: 20px
+}
+
+/* Jumbotron */
 .jumbotron {
   background-image: url("heart.jpg") !important; 
   background-size: cover ; 
   color: white;
 }
 
-/* Formatting quote */
-.quote{
-  padding-right: 20%;
-  padding-left: 20%;
-}
-
-/* .study{
-  width: 80%;
-} */
-
-
-table, th, td {
-  border: 1px solid white;
-  /* align-content: center; */
-  /* padding: 25px; */
-  
-}
-
-/* Trying something */
 *{
   box-sizing:border-box;
 }
@@ -52,7 +33,7 @@ table, th, td {
   margin-bottom: 3%;
 }
 
-/*2nd tableau */
+/* 2nd tableau */
 .tableauPlaceholder2{
   float:left !important;
   flex-direction: column !important;
@@ -61,16 +42,15 @@ table, th, td {
   margin-bottom: 3%;
 }
 
-
-/* Tableau Table */
+/* 3rd Tableau */
 .tableauPlaceholder3 {
   flex-direction: column !important;
   margin-left: 4% !important;
   margin-bottom: 4% !important;
   padding: 3px;
   border: 5px solid black;
+  background-color: white;
 }
-
 
 /* Remove default margin and padding from body */
 body {
@@ -81,29 +61,28 @@ body {
   overflow-x: hidden
 }
 
-/* Aligning text */
+/* Headers */
 h1 {
-  /* text-align: center; */
   margin-top:0px;
   padding-top: 0px;
   color: white;
 }
 
-/* Removing margins and padding */
 h2, h4{
   margin-bottom: 0px;
   padding-bottom: 0px;
   color: white;
 }
 
+/* Paragraphs */
 p{
   color: white;
-  /* width: 80%; */
   text-align:center;
   padding-right: 8%;
   padding-left: 8%;
 }
 
+/* Key Container For Graphs */
 .key-container {
   position: sticky;
   top: 100px;
@@ -115,28 +94,39 @@ p{
   background-color:rgb(11, 12, 16) !important;
   text-align: center
 }
+/* Key Table */
+table, th, td {
+  border: 1px solid white;  
+}
 
+/* Key Table */
 .key-table{
   margin-left:10px;
   margin-bottom: 10px;
   margin-right: 10px
-  
 }
 
+/* Table Bold Divider */
+table tr td:nth-of-type(2), table tr th:nth-of-type(2) {
+  border-width: 1px 4px 1px 1px;
+}
+
+/* Column for Tableau Graphs */
 .column-two {
   display: inline-flex;
   width: 60%;
   flex-direction: column
 }
 
-/* Summary Page */
+/* ---Summary & Extra Page --- */
+/* Graphs Container */
 .summary-tables{
   display: inline-flex;
   width: 60%;
   flex-direction: column;
-  /* margin-right:2%; */
 }
 
+/* Images */
 img{
   width:99%;
   margin-bottom: 2%;
@@ -145,15 +135,13 @@ img{
 
 .img2{
   width:85%;
-  /* height:85%; */
   background-color:white;
-  /* margin-left: 2px; */
   border: 5px solid black;
 }
 
-/* Extra Page */
+/* ---Extra Page Only--- */
+/* Text Box */
 .extra{
   margin-top:1%;
   margin-bottom:3%;
-  
 }

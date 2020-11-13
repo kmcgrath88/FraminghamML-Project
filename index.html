@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Framingham Heart Study</title>
 
-  <!-- Do we need this??? -->
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -40,182 +40,187 @@
   </div>
 </nav>
 
+<body>
+  <div class="container">
+    <div class="row">
 
-<!-- KEEP ALL BELOW -->
-<!-- <body> -->
-<div class="container">
-  <div class="row">
-
-    <!-- Jumbotron for title, quote, and pic -->
-    <div class="col-md-12 jumbotron text-center">
-      <h1><Strong>Framingham Heart Study</Strong></h1>
-      <br>
-      <h2 style="font-size:18px"><Strong> A long-term prospective study of the etiology of cardiovascular disease among
-          a population of subjects <br> in the community of Framingham, MA beginning in 1948.</Strong></h2>
-      <br>
+      <!-- Jumbotron for title, quote, and pic -->
+      <div class="col-md-12 jumbotron text-center">
+        <h1><Strong>Framingham Heart Study</Strong></h1>
+        <br>
+        <h2 style="font-size:18px"><Strong> A long-term prospective study of the etiology of cardiovascular disease
+            among
+            a population of subjects <br> in the community of Framingham, MA beginning in 1948.</Strong></h2>
+        <br>
+      </div>
     </div>
   </div>
-</div>
-<!-- <div class="container"> -->
 
-
-<div class="col-md-12 box">
-  <h2>About the Study</h2>
-  <br>
-
-  <p>This was the first prospective study of cardiovascular disease and identified the concept of risk factors and
-    their joint effects. The study began in 1948, with 5,209 subjects initially enrolled. Each subject was examined
-    biennially and were regularly surveilled for cardiovascular disease outcomes. Key findings from this study include
-    determing the importance of high blood pressure and high cholesterol are risk factors for cardiovascular disease.
-    For further information about the study please <a href="https://www.nhlbi.nih.gov/science/framingham-heart-study-fhs">click here</a>.
-
-  </p>
-
-  <h2>Analysis</h2>
-  <br>
-  <p>
-    The data used in this project is a subset of the entire study data set obtained from the NHBLI as a teaching 
-    <a href= "https://biolincc.nhlbi.nih.gov/teaching/">data set</a>. There were 4,434 participants included in this data set,
-    with clinical data obtained from 1-3 examinations from 1956-1968. Each participant was followed for a total of 24
-    years.
-    Risk factors included in the data set are: sex, age, systolic blood pressure, diastolic blood pressure, use of anti-hypertensive
-    medications, current cigarette smoking at exam, number of cigarettes smoked per day, serum total cholesterol,
-    BMI, casual serum glucose, diabetes, heart rate, and prevalent cardiovascular disease conditions at time of exam.
-    Outcomes recorded were: Angina Pectoris, Any Coronary Heart Disease, Cerebrovascular Disease, Hospitalization for Myocardial Infarction,
-    Myocardial Infarction or Fatal Coronary Heart Disease, Hypertension, Stroke, and Death from any cause. (All graphs below are from Period 1)
+  <!-- About the Study -->
+  <div class="col-md-12 box">
+    <h2>About the Study</h2>
     <br>
+    <p>This was the first prospective study of cardiovascular disease and identified the concept of risk factors and
+      their joint effects. The study began in 1948, with 5,209 subjects initially enrolled. Each subject was examined
+      biennially and were regularly surveilled for cardiovascular disease outcomes. Key findings from this study include
+      determing the importance of high blood pressure and high cholesterol are risk factors for cardiovascular disease.
+      For further information about the study please <a
+        href="https://www.nhlbi.nih.gov/science/framingham-heart-study-fhs" target="_blank">click here</a>.
+    </p>
+
+    <h2>Analysis</h2>
     <br>
-  </p>
-
-</div>
-
-<div class="key-container">
-  <h2>Key For Graphs</h2>
-  <br>
-  <div class="row key-table">
-    <table style="width:100%">
-      <tr>
-        <th>Variable </th>
-        <th>Description</th>
-        <th>Variable</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>ANGINA</td>
-        <td>Angina Pectoris</td>
-        <td>ANYCHD</td>
-        <td>Angina, Myocardial infarction, Coronary Insufficiency, or Fatal
-          Coronary Heart Disease</td>
-      </tr>
-      <tr>
-        <td>MI_FCHD</td>
-        <td>Hospitalized Myocardial Infarction or Fatal Coronary Heart Disease</td>
-        <td>CVD</td>
-        <td>Myocardial infarction, Fatal
-          Coronary Heart Disease, Atherothrombotic infarction, Cerebral
-          Embolism, Intracerebral Hemorrhage, or Subarachnoid Hemorrhage or
-          Fatal Cerebrovascular Disease</td>
-      </tr>
-      <tr>
-        <td>HYPERTEN</td>
-        <td>Hypertensive </td>
-        <td>STROKE</td>
-        <td>Atherothrombotic infarction, Cerebral Embolism, Intracerebral
-          Hemorrhage, or Subarachnoid Hemorrhage or Fatal Cerebrovascular
-          Disease</td>
-      </tr>
-    </table>
-
-  </div>
-</div>
-
-
-<!-- </div> -->
-
-<div class='column-two'>
-  <div class='container'>
-    <!-- <div class='col-md-4'> -->
-    <div class='tableauPlaceholder1' id='viz1604945782899' style='position: relative'><noscript><a href='#'><img alt=' '
-            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;AgeEvents2&#47;1_rss.png'
-            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='FarminghamML-Project&#47;AgeEvents2' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image'
-          value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;AgeEvents2&#47;1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en' /></object></div>
-    <script
-      type='text/javascript'>                    var divElement = document.getElementById('viz1604945782899'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '800px'; vizElement.style.height = '827px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <p>
+      The data used in this project is a subset of the entire study data set obtained from the NHBLI as a teaching
+      <a href="https://biolincc.nhlbi.nih.gov/teaching/" target="_blank">data set</a>. There were 4,434 participants included in this
+      data set,
+      with clinical data obtained from 1-3 examinations from 1956-1968. Each participant was followed for a total of 24
+      years.
+      Risk factors included in the data set are: sex, age, systolic blood pressure, diastolic blood pressure, use of
+      anti-hypertensive
+      medications, current cigarette smoking at exam, number of cigarettes smoked per day, serum total cholesterol,
+      BMI, casual serum glucose, diabetes, heart rate, and prevalent cardiovascular disease conditions at time of exam.
+      Outcomes recorded were: Angina Pectoris, Any Coronary Heart Disease, Cerebrovascular Disease, Hospitalization for
+      Myocardial Infarction,
+      Myocardial Infarction or Fatal Coronary Heart Disease, Hypertension, Stroke, and Death from any cause. (All graphs
+      below are from Period 1)
+      <br>
+      <br>
+    </p>
   </div>
 
-
-  <div class='container'>
-    <div class='tableauPlaceholder2' id='viz1605213205110' style='position: relative'><noscript><a href='#'><img alt=' '
-            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;ProjDash&#47;1_rss.png'
-            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='FarminghamML-Project&#47;ProjDash' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image'
-          value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;ProjDash&#47;1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en' />
-        <param name='filter' value='publish=yes' /></object></div>
-    <script
-      type='text/javascript'>  var divElement = document.getElementById('viz1605213205110');
-        var vizElement = divElement.getElementsByTagName('object')[0];
-        vizElement.style.width = '800px'; vizElement.style.height = '827px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
+  <!-- Key -->
+  <div class="key-container">
+    <h2>Key For Graphs</h2>
+    <br>
+    <div class="row key-table">
+      <table style="width:100%">
+        <tr>
+          <th>Variable </th>
+          <th>Description</th>
+          <th>Variable</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>ANGINA</td>
+          <td>Angina Pectoris</td>
+          <td>ANYCHD</td>
+          <td>Angina, Myocardial infarction, Coronary Insufficiency, or Fatal
+            Coronary Heart Disease</td>
+        </tr>
+        <tr>
+          <td>MI_FCHD</td>
+          <td>Hospitalized Myocardial Infarction or Fatal Coronary Heart Disease</td>
+          <td>CVD</td>
+          <td>Myocardial infarction, Fatal
+            Coronary Heart Disease, Atherothrombotic infarction, Cerebral
+            Embolism, Intracerebral Hemorrhage, or Subarachnoid Hemorrhage or
+            Fatal Cerebrovascular Disease</td>
+        </tr>
+        <tr>
+          <td>HYPERTEN</td>
+          <td>Hypertensive </td>
+          <td>STROKE</td>
+          <td>Atherothrombotic infarction, Cerebral Embolism, Intracerebral
+            Hemorrhage, or Subarachnoid Hemorrhage or Fatal Cerebrovascular
+            Disease</td>
+        </tr>
+      </table>
+    </div>
   </div>
-  <div class='container'>
-    <div class='tableauPlaceholder3' id='viz1604943669405' style='position: relative'><noscript><a href='#'><img alt=' '
-            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;ChartDash&#47;1_rss.png'
-            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='FarminghamML-Project&#47;ChartDash' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image'
-          value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;ChartDash&#47;1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en' />
-        <param name='filter' value='publish=yes' /></object></div>
-    <script
-      type='text/javascript'>                    var divElement = document.getElementById('viz1604943669405'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '1350px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '487px'; vizElement.style.maxHeight = '587px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '1350px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '487px'; vizElement.style.maxHeight = '587px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
+  <!-- Tableau Graphs -->
+  <div class='column-two'>
+    <div class='container'>
+      <!-- Tableau Graph 1 -->
+      <div class='tableauPlaceholder1' id='viz1604945782899' style='position: relative'><noscript><a href='#'><img
+              alt=' '
+              src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;AgeEvents2&#47;1_rss.png'
+              style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='FarminghamML-Project&#47;AgeEvents2' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image'
+            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;AgeEvents2&#47;1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en' /></object></div>
+      <script
+        type='text/javascript'>      var divElement = document.getElementById('viz1604945782899'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '800px'; vizElement.style.height = '827px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+
+    <div class='container'>
+      <!-- Tableau Graph 2 -->
+      <div class='tableauPlaceholder2' id='viz1605213205110' style='position: relative'><noscript><a href='#'><img
+              alt=' '
+              src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;ProjDash&#47;1_rss.png'
+              style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='FarminghamML-Project&#47;ProjDash' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image'
+            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;ProjDash&#47;1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en' />
+          <param name='filter' value='publish=yes' /></object></div>
+      <script
+        type='text/javascript'>  var divElement = document.getElementById('viz1605213205110');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width = '800px'; vizElement.style.height = '827px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+
+    <div class='container'>
+      <!-- Tableau Graph 3 -->
+      <div class='tableauPlaceholder3' id='viz1604943669405' style='position: relative'><noscript><a href='#'><img
+              alt=' '
+              src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;ChartDash&#47;1_rss.png'
+              style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='FarminghamML-Project&#47;ChartDash' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image'
+            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fa&#47;FarminghamML-Project&#47;ChartDash&#47;1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en' />
+          <param name='filter' value='publish=yes' /></object></div>
+      <script
+        type='text/javascript'>                    var divElement = document.getElementById('viz1604943669405'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '1350px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '487px'; vizElement.style.maxHeight = '587px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '1350px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '487px'; vizElement.style.maxHeight = '587px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+    </div>
   </div>
-</div>
 
 
-<!-- Bootstrap necessities???? not sure if we need -->
+  <!-- Bootstrap necessities -->
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
 </body>
 
