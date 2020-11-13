@@ -11,7 +11,8 @@ A dataset of clinical data was used to explore the ability of different machine 
 * [Study Data](#study-data)
 * [Data Processing](#data-processing)
 * [Machine Learning Exploration](#machine-learning-exploration)
-* [Project Instructions](#project-instructions)
+* [Data Visualization](#data-visualization)
+* [Findings](#findings)
 * [Team Members](#team-members)
 
 <!-- Framingham Heart Study -->
@@ -83,7 +84,7 @@ Visualizations of the data exploration and analyses can be found at the [project
  * summary visualizations of test performance for each event outcome
  * ranking of feature importance for the random forest classifier
 
-
+<!-- Findings -->
 ## Findings
 
 We found that the class imbalance in a predicted outcome significantly affected which testing metric accurately measured the performance of machine learning algorithm.  For outcomes with highly imbalanced classes (e.g. MI_FCHD: negative event = 3703, positive event = 731) using test accuracy is a very misleading metric, as the number of correctly called negatives far outweighs the small percentage of correctly called positives.  A better test metric then, is the f1- measure, which is the harmonic mean of the precision and recall.  
@@ -91,3 +92,10 @@ We found that the class imbalance in a predicted outcome significantly affected 
 We also found that support vector machines (SVMs) seemed to perform better than the other machine learning algorithms, especially for outcomes with imbalanced classes.  SVMs tended to have the highest F1-measure for each outcome and generally predicted a greater number of true positives than the other algorithms.
 
 ![alt text](Images/anychd_boxplot.png)
+
+<!-- Team Members -->
+## Team Members
+* [ Todd Auman ](https://github.com/jtauman)
+* [ Bobby Huffstetler ](https://github.com/bhuffstetler)
+* [Jamie Lam](https://github.com/jwlam)
+* [ Kristi McGrath ](https://github.com/kmcgrath88)
