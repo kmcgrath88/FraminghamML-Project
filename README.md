@@ -22,7 +22,7 @@ A dataset of clinical data was used to explore the ability of different machine 
 
 The Framingham Heart Study is a long-term prospective study, beginning in 1948, of the etiology of cardiovascular disease among a population of subjects in the community of Framingham, MA. This was the first prospective study of cardiovascular disease and identified the concept of risk factors and their joint effects.
 
-The study began in 1948, with 5,209 subjects initially enrolled. Each subject was examined biennially and were regularly surveilled for cardiovascular disease outcomes. Key findings from this study include determing the importance of high blood pressure and high cholesterol are risk factors for cardiovascular disease.  [Additional study information](https://www.nhlbi.nih.gov/science/framingham-heart-study-fhs)
+The study began in 1948, with 5,209 subjects initially enrolled. Each subject was examined biennially and were regularly surveilled for cardiovascular disease outcomes. Key findings from this study include determing the importance of high blood pressure and high cholesterol are risk factors for cardiovascular disease.  [Additional study information](https://www.nhlbi.nih.gov/science/framingham-heart-study-fhs).
 
 <!-- Study Data -->
 ## Study Data
