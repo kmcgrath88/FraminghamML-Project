@@ -9,6 +9,8 @@ A dataset of clinical data was used to explore the ability of different machine 
 
 * [Framingham Heart Study](#framingham-heart-study)
 * [Study Data](#study-data)
+* [Our Project](#our-project)
+  * [Built With](#built-with)
 * [Data Processing](#data-processing)
 * [Machine Learning Exploration](#machine-learning-exploration)
 * [Data Visualization](#data-visualization)
@@ -53,6 +55,21 @@ The data used in this project is a subset of the entire study data set obtained 
 * Death from any cause
 
 ![subjects per outcome](Images/subjects_per_outcome.png)
+
+<!-- Our Project -->
+## Our Project
+
+<!-- Built With -->
+### Built With
+
+Our project was built using the following frameworks/libraries/databases:<br>
+* Python 
+* Scikit-learn
+* Pandas
+* Matplotlib
+* Tableau
+* HTML
+* CSS
 
 <!-- Data Processing -->
 ## Data Processing
